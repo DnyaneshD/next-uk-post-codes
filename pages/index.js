@@ -10,7 +10,7 @@ const Homepage = ({ data }) => {
 
 export default Homepage;
 
-//This function is called on the server when the user requests this page a
+//This function is called on the server when the user requests this page
 export async function getServerSideProps() {
   // Fetch data from the external API
   const res = await axios.get(`http://api.postcodes.io/random/postcodes`);
